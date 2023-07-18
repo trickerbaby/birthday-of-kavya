@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Kavya's Birthday Celebration</title>
+
   <style>
 
 .engineering-section {
@@ -204,7 +205,13 @@
     }
     
     .banner {
-      background-image: url("kavya_banner.jpg");
+      background-position: center 45%; /* This will move the background up by 20% of the container's height */
+    
+    /* Add other background properties if needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    /* Adjust the size of the background image to cover the entire container */
+
+      background-image: url("banner.jpg");
       background-size: cover;
       height: 400px;
       display: flex;
@@ -537,8 +544,14 @@
 </head>
 <body>
   <div class="banner">
-    <h1 class="heart-animation">Happy Birthday, Kavya!<div class="confetti"></div></h1>
+    
   </div>
+
+
+  <audio autoplay controls loop>
+    <source src="Transformers (2007)  Main Theme.mp3" type="audio/mpeg">
+    <!-- Add other audio formats here as fallbacks for different browsers -->
+  </audio>
   
   <div class="nav">
     <a href="#about">About</a>
@@ -753,10 +766,7 @@
 
 
 
-<audio autoplay loop>
-  <source src="Transformers (2007)  Main Theme.mp3" type="audio/mpeg">
-  <!-- Add other audio formats here as fallbacks for different browsers -->
-</audio>
+
   
   <div class="nav">
     <a href="#about">About</a>
