@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kavya's Birthday Celebration</title>
+  <style>
+
+.engineering-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .engineering-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .engineering-message {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .engineering-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .engineering-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .engineering-gallery img:hover {
+      transform: scale(1.05);
+    }
+.tribute-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .tribute-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .tribute-message {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .tribute-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .tribute-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .tribute-gallery img:hover {
+      transform: scale(1.05);
+    }
+.memories-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .memories-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .favorite-food-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .favorite-food-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .rice-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .rice-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .rice-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .rice-description {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .family-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .family-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .family-message {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .family-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .family-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .family-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    body {
+      background-color: #fcefee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .banner {
+      background-image: url("kavya_banner.jpg");
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+    }
+
+
+
+    .about-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: justify;
+      color: #4c283e;
+    }
+    
+    .about-section img {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 20px auto;
+    }
+
+    .about-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .about-section p {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    
+    .about-section p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .banner h1 {
+      font-size: 64px;
+      margin: 0;
+      padding: 20px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      animation: glow 2s linear infinite;
+    }
+    
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      }
+      50% {
+        text-shadow: 5px 5px 10px rgba(255, 215, 0, 0.7);
+      }
+    }
+    
+    .nav {
+      background-color: #fca9b0;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 5px solid #e03e4e;
+    }
+    
+    .nav a {
+      color: #4c283e;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .nav a:hover {
+      color: #e03e4e;
+    }
+
+    .nav a::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #e03e4e;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .nav a:hover::before {
+      transform: scaleX(1);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: justify;
+      color: #4c283e;
+    }
+
+    .profile-pic {
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 20px auto;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .heart-animation {
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #e03e4e;
+      opacity: 0.7;
+      top: -10px;
+      animation: confetti 3s linear infinite;
+    }
+
+    @keyframes confetti {
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(500px) rotate(720deg);
+      }
+    }
+
+    .slideshow-container {
+      max-width: 800px;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: #4c283e;
+      font-weight: bold;
+      font-size: 24px;
+      user-select: none;
+      transition: 0.6s ease;
+      border-radius: 5px;
+    }
+
+    .fan-zone-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .fan-zone-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .fan-zone-message {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+    .fan-zone-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .fan-zone-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .fan-zone-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: #fca9b0;
+      color: #fff9f9;
+    }
+
+    .guestbook {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .guestbook textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      border-radius: 5px;
+      border: 1px solid #e03e4e;
+      padding: 8px;
+      font-size: 16px;
+      color: #4c283e;
+    }
+
+    .guestbook button {
+      background-color: #e03e4e;
+      color: #fff9f9;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .guestbook button:hover {
+      background-color: #fca9b0;
+    }
+
+    @media (max-width: 768px) {
+      .banner h1 {
+        font-size: 48px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .banner h1 {
+        font-size: 36px;
+      }
+
+      .nav a {
+        font-size: 16px;
+      }
+
+      .content {
+        font-size: 14px;
+      }
+    }
+
+
+    .aspirations-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .aspirations-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .aspirations-message {
+      margin-top: 20px;
+      text-align: justify;
+    }
+
+
+    .ias-images {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .ias-images img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1 class="heart-animation">Happy Birthday, Kavya!<div class="confetti"></div></h1>
+  </div>
+  
+  <div class="nav">
+    <a href="#about">About</a>
+    <a href="#memories">Memories</a>
+    <a href="#food">Favorite Food</a>
+    <a href="#remembrance">Remembrance</a>
+    <a href="#family">Family</a>
+    <a href="#vishu">Vishu</a>
+    <a href="#wishes">Wishes</a>
+    <a href="#contact">Contact</a>
+  </div>
+  
+  <div class="content">
+    <img src="prof.png" alt="Kavya's Profile Picture" class="profile-pic">
+    <h2>Welcome to Kavya's Birthday Celebration!</h2>
+    <p>Dear Kavya,</p>
+    <p>On this special day, we have come together to celebrate you and the beautiful person you are. This website is dedicated to honoring your life, your dreams, and the joy you bring to everyone around you.</p>
+    <p>Explore the different sections to learn more about your favorite actor, Akshay Kumar, your love for rice, your aspirations, your family, your beloved tortoise, Vishu, and more. We've also gathered cherished memories and heartfelt wishes from your friends and family to make this day even more special.</p>
+    <p>Thank you for being a wonderful person and for the love and support you've shown. We hope this birthday celebration brings a smile to your face and fills your heart with happiness.</p>
+    <p>Wishing you a very happy birthday!</p>
+    <p>With love,</p>
+    <p>Your friends and family</p>
+  </div>
+  
+  <!-- Slideshow of memorable moments -->
+  <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="herpic.jpeg" alt="Memorable Moment 1">
+    </div>
+    <div class="mySlides">
+      <img src="herpic2.jpeg" alt="Memorable Moment 2">
+    </div>
+    <div class="mySlides">
+        <img src="herpic3.jpeg" alt="Memorable Moment 2">
+      </div>
+      <div class="mySlides">
+        <img src="herpic4.jpeg" alt="Memorable Moment 2">
+      </div>
+    <!-- Add more slides as needed -->
+    
+    <!-- Previous and Next buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Guestbook for wishes -->
+  <div class="guestbook">
+    <h2>Leave a Birthday Wish for Kavya</h2>
+    <textarea placeholder="Write your message here..."></textarea>
+    <button>Submit Wish</button>
+  </div>
+  
+  <!-- Other sections and content go here -->
+
+  <div class="about-section" id="#about">
+    <h2>About Kavya</h2>
+    <img src="photo_anime.jpg" alt="Kavya's Picture">
+    <p>Hello everyone!</p>
+    <p>I'm Kavya, and I'm excited to be celebrating my birthday with all of you. I'm a passionate engineering student, and my dream is to become an IAS officer one day. My journey has had its ups and downs, but it's the support of my loving family, friends, and all of you that keeps me going.</p>
+    <p>Aside from my academic pursuits, I'm a big fan of Indian actor Akshay Kumar, and I absolutely love rice! However, you won't find any peas in my plate, as they are my least favorite food. On a lighter note, I adore my pet tortoise, Vishu, who brings a smile to my face every day.</p>
+    <p>Thank you for being a part of my life and for sharing in this special day with me. Your presence and warm wishes mean the world to me. Let's make this birthday unforgettable together!</p>
+    <p>With love,</p>
+    <p>Kavya</p>
+  </div>
+
+
+  <div class="memories-section">
+    <h2>Memories</h2>
+    <div class="gallery">
+        "<img src="galary (1).jpeg" alt="Memory 1">" 
+        "<img src="galary (2).jpeg" alt="Memory 1">" 
+        "<img src="galary (3).jpeg" alt="Memory 1">" 
+        "<img src="galary (4).jpeg" alt="Memory 1">" 
+        "<img src="galary (5).jpeg" alt="Memory 1">" 
+        "<img src="galary (6).jpeg" alt="Memory 1">" 
+        "<img src="galary (7).jpeg" alt="Memory 1">" 
+        "<img src="galary (8).jpeg" alt="Memory 1">" 
+        "<img src="galary (9).jpeg" alt="Memory 1">" 
+        "<img src="galary (10).jpeg" alt="Memory 1">" 
+      <!-- Add more images as needed -->
+    </div>
+  </div>
+
+
+
+  <div class="favorite-food-section">
+    <h2>Favorite Food - Rice</h2>
+    <div class="rice-gallery">
+      <img src="rice_dish_1.jpg" alt="Rice Dish 1">
+      <img src="rice_dish_2.jpg" alt="Rice Dish 2">
+      <img src="rice_dish_3.jpg" alt="Rice Dish 3">
+      <!-- Add more images of rice dishes as needed -->
+    </div>
+    <div class="rice-description">
+      <p>When it comes to food, there's nothing I love more than a delicious plate of rice. Whether it's steamed, fried, or in a biryani, rice never fails to bring comfort and joy to my taste buds. The aroma of perfectly cooked rice and the variety of flavors in different rice dishes are simply irresistible to me.</p>
+      <p>From my favorite Indian dishes like pulao and tawa rice to exploring international cuisines that feature rice as a staple, my love for rice knows no bounds. It's the one food that can turn an ordinary meal into something extraordinary, and I'm always on the lookout for new rice recipes to try.</p>
+      <p>So, let's raise a spoonful of rice to celebrate this special day together! Thank you for being a part of my life and sharing in my culinary adventures.</p>
+      <p>Bon appétit!</p>
+      <p>With love,</p>
+      <p>Kavya</p>
+    </div>
+  </div>
+  
+  <div class="aspirations-section">
+    <h2>Aspirations - Becoming an IAS Officer</h2>
+    <div class="aspirations-message">
+      <p>Dear Kavya,</p>
+      <p>On your special day, we want to celebrate not only the person you are but also the incredible dreams you hold in your heart. Your determination to become an IAS officer is awe-inspiring, and it reflects your commitment to making a positive impact on society.</p>
+      <p>Your journey towards this goal has been filled with hard work, perseverance, and a deep sense of purpose. We have witnessed your unwavering dedication to your studies and your desire to bring positive change to the lives of people around you.</p>
+      <p>As you embark on this path, always remember that you have a loving support system cheering you on. Your family, friends, and everyone who knows you are immensely proud of your achievements and have full faith in your ability to achieve greatness.</p>
+      <p>While the road to becoming an IAS officer might have its challenges, we know that your determination and passion will guide you through every obstacle. Your kindness, intelligence, and leadership qualities make you the perfect candidate to make a real difference in the world.</p>
+      <p>As you blow out the candles on your cake today, know that your dreams are worth every wish you make. May your birthday bring you renewed strength and the realization that you are destined for greatness.</p>
+      <p>Happy Birthday, dear Kavya! Here's to you and the amazing future that lies ahead.</p>
+      <p>With love and admiration,</p>
+      <p>Your Family and Friends</p>
+    </div>
+  </div>
+
+
+  <div class="ias-images">
+    <img src="ias_logo.jpg" alt="IAS Logo">
+    <img src="unboring_stuff_you've_created.jpg" alt="IAS Officer">
+    <img src="unboring_stuff_you've_created (1).jpg" alt="IAS Officer">
+  </div>
+</div>
+
+
+<div class="tribute-section">
+  <h2>Tribute to Vishu</h2>
+  <div class="tribute-message">
+    <p>On this special occasion, we can't forget to pay tribute to your adorable pet tortoise, Vishu. Vishu has been a cherished member of our family, bringing joy and happiness to all of us.</p>
+    <p>With his slow and steady pace, Vishu has taught us valuable lessons in patience and perseverance. He has a unique personality and never fails to amuse us with his little antics.</p>
+    <p>We have shared countless wonderful moments with Vishu, from his little adventures in the garden to the times he enjoys basking in the warm sun. His presence has filled our lives with love and laughter.</p>
+    <p>Let's take a moment to appreciate the love and happiness Vishu has brought into our lives. Here are some cherished memories captured with Vishu:</p>
+  </div>
+  <!-- Vishu Gallery -->
+  <div class="tribute-gallery">
+    <img src="vishu_clone.jpg" alt="Vishu Memory 1">
+    <img src="vishu_clone_2.jpg" alt="Vishu Memory 2">
+    <img src="vishu_clone_3.jpg" alt="Vishu Memory 3">
+    <!-- Add more images of Vishu as needed -->
+  </div>
+</div>
+
+
+<div class="fan-zone-section">
+  <h2>Akshay Kumar Fan Zone</h2>
+  <div class="fan-zone-message">
+    <p>As a devoted fan of Indian cinema, especially Akshay Kumar's movies, it's time to celebrate your favorite Bollywood actor in this special "Akshay Kumar Fan Zone." Akshay Kumar's versatility, action-packed performances, and dedication to social causes make him an icon in the film industry.</p>
+    <p>Here are some interesting facts about Akshay Kumar:</p>
+    <ul>
+      <li>Akshay Kumar was born as Rajiv Hari Om Bhatia on September 9, 1967, in Amritsar, Punjab, India.</li>
+      <li>Before entering the film industry, he worked as a chef and a martial arts instructor in Bangkok.</li>
+      <li>Akshay holds a black belt in Taekwondo and is known for performing many of his stunts in movies.</li>
+      <li>He is often referred to as the "Khiladi" of Bollywood due to his association with several successful movies with the word "Khiladi" in their titles.</li>
+      <li>Akshay Kumar is passionate about fitness and follows a disciplined lifestyle.</li>
+      <li>Aside from his contributions to Indian cinema, Akshay actively supports various social causes and is involved in philanthropic work.</li>
+    </ul>
+    <p>Let's take a moment to admire some of the best moments captured from Akshay Kumar's movies:</p>
+  </div>
+  <!-- Akshay Kumar Gallery -->
+  <div class="fan-zone-gallery">
+    <img src="ramsety.jpg" alt="Akshay Kumar Movie 1">
+    <img src="akshay3.jpg" alt="Akshay Kumar Movie 2">
+    <img src="suryavanshu.jpg" alt="Akshay Kumar Movie 3">
+    <!-- Add more images of Akshay Kumar's movies as needed -->
+  </div>
+</div>
+
+
+
+<div class="family-section">
+  <h2>Family Love</h2>
+  <div class="family-message">
+    <p>Dear Kavya,</p>
+    <p>As you celebrate another year of life, we want to take this moment to express our deep love and gratitude for having you as a beloved member of our family. Your presence has enriched our lives in countless ways, and we cherish every memory we've shared together.</p>
+    <p>Through thick and thin, our family bond has remained strong, supporting each other through every step of life's journey. We've laughed together, cried together, and created beautiful memories that will last a lifetime.</p>
+    <p>Your caring nature, determination, and loving spirit are truly inspirational, and we are immensely proud of the person you have become. Your achievements, aspirations, and dreams are a testament to your strength and resilience.</p>
+    <p>On this special day, we want you to know that you are loved beyond measure. You are the heartbeat of our family, and we are grateful for the joy and happiness you bring to our lives.</p>
+    <p>Happy birthday, dearest Kavya! May this day be filled with love, laughter, and the warmth of family and friends.</p>
+    <p>With all our love,</p>
+    <p>Your Family</p>
+  </div>
+  <!-- Family Gallery -->
+  <div class="family-gallery">
+    <img src="family_memory_1.jpg" alt="Family Memory 1">
+    <img src="family_memory_2.jpg" alt="Family Memory 2">
+    <img src="family_memory_3.jpg" alt="Family Memory 3">
+    <!-- Add more images of family memories as needed -->
+  </div>
+</div>
+
+
+<div class="engineering-section">
+  <h2>Engineering Milestones</h2>
+  <div class="engineering-message">
+    <p>As you approach your third year of engineering, it's time to celebrate the significant milestones you've achieved during this academic journey. Your dedication to your studies, passion for learning, and hard work have brought you this far, and we couldn't be prouder of you!</p>
+    <p>During these three years, you've tackled challenging assignments, conquered tough exams, and expanded your knowledge in various fields of engineering. Your thirst for knowledge and commitment to excellence have set you apart as a remarkable student.</p>
+    <p>Not only have you excelled in academics, but you've also actively participated in extracurricular activities, showcasing your leadership skills and your ability to balance different aspects of life.</p>
+    <p>As you continue your journey in the world of engineering, we have no doubt that you will achieve even greater heights and make significant contributions to your field.</p>
+    <p>Here are some memorable moments from your engineering life so far:</p>
+  </div>
+  <!-- Engineering Gallery -->
+  <div class="engineering-gallery">
+    <img src="engineering_memory_1.jpg" alt="Engineering Memory 1">
+    <img src="engineering_memory_2.jpg" alt="Engineering Memory 2">
+    <img src="engineering_memory_3.jpg" alt="Engineering Memory 3">
+    <!-- Add more images of engineering milestones as needed -->
+  </div>
+</div>
+
+
+
+
+<audio autoplay loop>
+  <source src="Transformers (2007)  Main Theme.mp3" type="audio/mpeg">
+  <!-- Add other audio formats here as fallbacks for different browsers -->
+</audio>
+  
+  <div class="nav">
+    <a href="#about">About</a>
+    <a href="#memories">Memories</a>
+    <a href="#food">Favorite Food</a>
+    <a href="#remembrance">Remembrance</a>
+    <a href="#family">Family</a>
+    <a href="#vishu">Vishu</a>
+    <a href="#wishes">Wishes</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    }
+  </script>
+</body>
+</html>
