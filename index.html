@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Kavya's Birthday Celebration</title>
-
+  <div style="display:none" class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/q2SyrJj6m5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
   <style>
 
 .engineering-section {
@@ -566,7 +567,7 @@
   </div>
   
   <div class="content">
-    <img src="prof.png" alt="Kavya's Profile Picture" class="profile-pic">
+    <img onclick="videomaker()" src="prof.png" alt="Kavya's Profile Picture" class="profile-pic">
     <h2>Welcome to Kavya's Birthday Celebration!</h2>
     <p>Dear Kavya,</p>
     <p>On this special day, we have come together to celebrate you and the beautiful person you are. This website is dedicated to honoring your life, your dreams, and the joy you bring to everyone around you.</p>
@@ -809,6 +810,20 @@
         slides[i].style.display = "none";
       }
       slides[slideIndex-1].style.display = "block";
+    }
+let counter = 0;
+    function videomaker()
+    {
+      console.log(counter);
+      counter++;
+      if(counter==5)
+      {
+        const videoelement = document.getElementsByClassName('video')[0];
+        videoelement.style.display = 'block';
+        videoelement.style.position = 'fixed';
+        videoelement.style.top = '40%';
+        videoelement.style.left = '50%';
+      }
     }
   </script>
 </body>
