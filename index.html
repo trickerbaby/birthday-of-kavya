@@ -6,6 +6,26 @@
   </div>
   <style>
 
+.letter {
+  font-family: Arial, sans-serif;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.letter p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.letter p:last-child {
+  font-style: italic;
+}
+
 .engineering-section {
       max-width: 800px;
       margin: 20px auto;
@@ -550,7 +570,7 @@
   </div>
 
 
-  <audio autoplay controls loop  style="position:fixed; float:right;top:50%;">
+  <audio class="sound" autoplay controls loop  style="position:fixed; float:right;top:50%;">
     <source src="Hum Bhi Agar Bachche Hote, Happy Birthday To You - Johnny Walker  Hindi Song  Door Ki Awaaz.mp3" type="audio/mpeg">
     <!-- Add other audio formats here as fallbacks for different browsers -->
   </audio>
@@ -674,9 +694,51 @@
 
 
   <div class="ias-images">
-    <img src="ias_logo.jpg" alt="IAS Logo">
+    <img onclick="letter()" src="ias_logo.jpg" alt="IAS Logo">
     <img src="unboring_stuff_you've_created.jpg" alt="IAS Officer">
     <img src="unboring_stuff_you've_created (1).jpg" alt="IAS Officer">
+  </div>
+
+  <div class="letter" style="display: none">
+    <p>Dear Kavya,</p>
+    <p>Ye msg mene likh rakha tha bhot pehle hi....socha tumhe btauga nahi...sirf worst case ke liye rakha tha
+      ki shayad kabhi esa waqt aega jab tumhe bhot kuch bolna hoga tum bol ni paogi
+      ya me bhot kuch bol na chahuga par bol nhi pauga
+      shyd kabhi esa waqt aega jabh tum ya me khudke kiye kisi kaam pr afsos mehsus krege
+      shayad esa bhi time aega jabh tumhe meri ya mujhe tumhari ehmiyat me kami mehsus hone lagegi
+      shyad esa bhi time aega jabh meri jaga lene ke liye kuch log tumhe convice krege
+      kabhi esa bhi hoga ki shyd wo tumhe thoda thoda convince kr bhi le...
+      ya shayad mere sath bhi ho esa....shayad esa bhi waqt aye jaha tum ya me
+      kuch esa chupae ek dusre se jo ham khul ke na bata paye ek dusre ko
+      shayad kabhi tumhe merse picha chhudane ka man krne lage ya shyd mujhe man 
+      karne lage....me bas yehi batana chahuga koi bhi case scenario raha ho...
+      agar me abhi is waqt tumse door hu...to farak nhi pdta hamare bich kesi
+      ladai hui ho...shyd mene esa kuch kehdia ho jiska tumhe affect pda ho ya kuch esa jis se
+      mujhe pda ho....koi bhi baat hui ho....Me aaj bhi wohi pyar karta hu...Karta
+      rahunga....mujhe tumpar bhrosa hai...kuch ni krogi...ha tumpar hai sara haq
+      mujhpar bi hai sara haq....but kaha tha na tumne 100 wajae alg hone ki ek sath hone ki
+      use hi pyar kehte hai....toh meri ek waja yehi hai tumse kabhi na alag hona chahne ki
+      ke agar kalko dusre sheher me hoge to merko ya tumhe ye to na sochna pade ki
+      ki me ya tum kuch galt kar rahe honge....as pas ka mahol dekh kar yehi hai ki
+      jism to khub peso m bik rahe hai....par bhrosa sabhse mehnga hai...shayad tum ye chhod do padhe bina pura...
+      agar me kuch akhri baar kehna chahuga to bas ye ki agar merse koi bhi galti hui ho...to me tumhre bager bhot mushkil se time
+      bita paraha hu is waqt..but firbhi hasta khel raha houga tumhre saamne....makhhan ni lagara hu yr...jo sach hai batara hu...yar ham log ki hoti hai ek tendency ki ham hamesha samne wale se or jyada ki umide
+      karte hai...mene bhi kri hogi tumne bhi kri hogi..par ye nhi smj pate ki wo
+      insaan pehle se kitna kara hai hamare liye...jabh tum me or merme koi bhi ladayi hui ham dono ki ek galti hmesha rahi ki hamne ek dusre ko glat smjha or
+      ek dusre me kamia nikaali....problem ko fix na karke ek dusre ko hi problem samjha kayi baar...
+      joki sach nahi hai...merko tumse behtar ldki ni mili thi or agar me galat nhi hu to tum bhi kahi na kahi ye manti jarur hongi...ki dil m abhi bhi kuch to baaki hai..
+      agar thoda sa bhi baaki nhi hai...to ek baar bs khud meri photo ki traf dekho apne saath or batana ki kya lagta hai ham me se koi bhi ek dusre ke liye galat hai kya ?
+      kya ham khush nhi the ? maana thodi galtia mujhse...mana thodi tumse...ham dono hi insaan hai...hota hai yaar...chije hamesha sudhar sakti hai...aj nhi to kal..kal ni to parso...kabhi to sudhregi yr..
+      in the end to bs ye hi matter karta hai na ki dono sath the to khush hi...bs ye ni smj paye ki ham dono ko milkar problem se ldna hoga naki ek dusre ko problem smjhna hoga...
+      
+      at last...agar me bhot naraj hu or baat ni kr para hu tumse is waqt ya ham dono ki bate band h...
+      to agar tum andar hi andar kuch bhi rkhti ho thoda bhi...to shyd ye akhri moka ho tumhre mere paas...shyd kuch to sudhar skega
+      to agar baat krne k man ho...to bina kisi jhijak ke ek sticker drop krdena whatsapp pr ya fir insta pr koi gif bhej dena..taaki mujhe pta rahe ki ham is badlav ke liye ready hai
+      and i PROMISE you...ki is baar ham woh galtia nhi krege jo hamne pehle kari....Love U Still. 'bachi :)'....Bye..
+      
+      </p>
+    <!-- Rest of the letter content -->
+    <p>- Naman</p>
   </div>
 </div>
 
@@ -794,6 +856,22 @@
 </footer>
 
   <script>
+    var letcount = 0;
+    function letter()
+    {
+      letcount++;
+
+      if(letcount>=4)
+      {
+      const lett = document.getElementsByClassName('letter')[0];
+      const sound = document.getElementsByClassName('sound')[0];
+      sound.src = "little.mp3";
+      lett.style.display = 'block';
+      const body = document.getElementsByTagName('body');
+      body.style.background = "black";
+      }
+    }
+
     var slideIndex = 1;
     showSlides(slideIndex);
 

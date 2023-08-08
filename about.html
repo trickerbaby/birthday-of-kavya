@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kavya's Birthday Celebration</title>
+  <style>
+    /* ... (previous CSS code) ... */
+    body {
+      background-color: #fcefee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .banner {
+      background-image: url("kavya_banner.jpg");
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+    }
+    
+    .banner h1 {
+      font-size: 64px;
+      margin: 0;
+      padding: 20px;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      animation: glow 2s linear infinite;
+    }
+    
+    @keyframes glow {
+      0%, 100% {
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+      }
+      50% {
+        text-shadow: 5px 5px 10px rgba(255, 215, 0, 0.7);
+      }
+    }
+    
+    .nav {
+      background-color: #fca9b0;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 5px solid #e03e4e;
+    }
+    
+    .nav a {
+      color: #4c283e;
+      text-decoration: none;
+      margin: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+    }
+    
+    .nav a:hover {
+      color: #e03e4e;
+    }
+
+    .nav a::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #e03e4e;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .nav a:hover::before {
+      transform: scaleX(1);
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: justify;
+      color: #4c283e;
+    }
+
+    .profile-pic {
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin: 20px auto;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .heart-animation {
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .confetti {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #e03e4e;
+      opacity: 0.7;
+      top: -10px;
+      animation: confetti 3s linear infinite;
+    }
+
+    @keyframes confetti {
+      0% {
+        transform: translateY(0) rotate(0);
+      }
+      100% {
+        transform: translateY(500px) rotate(720deg);
+      }
+    }
+
+    .slideshow-container {
+      max-width: 800px;
+      margin: 20px auto;
+      position: relative;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: #4c283e;
+      font-weight: bold;
+      font-size: 24px;
+      user-select: none;
+      transition: 0.6s ease;
+      border-radius: 5px;
+    }
+
+    .next {
+      right: 0;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: #fca9b0;
+      color: #fff9f9;
+    }
+
+    .guestbook {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff9f9;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #4c283e;
+    }
+
+    .guestbook textarea {
+      width: 100%;
+      height: 100px;
+      resize: none;
+      border-radius: 5px;
+      border: 1px solid #e03e4e;
+      padding: 8px;
+      font-size: 16px;
+      color: #4c283e;
+    }
+
+    .guestbook button {
+      background-color: #e03e4e;
+      color: #fff9f9;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .guestbook button:hover {
+      background-color: #fca9b0;
+    }
+
+    @media (max-width: 768px) {
+      .banner h1 {
+        font-size: 48px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .banner h1 {
+        font-size: 36px;
+      }
+
+      .nav a {
+        font-size: 16px;
+      }
+
+      .content {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h1 class="heart-animation">Happy Birthday, Kavya!<div class="confetti"></div></h1>
+  </div>
+  
+  <div class="nav">
+    <!-- ... (navigation links) ... -->
+    <a href="#about">About</a>
+    <a href="#memories">Memories</a>
+    <a href="#food">Favorite Food</a>
+    <a href="#remembrance">Remembrance</a>
+    <a href="#family">Family</a>
+    <a href="#vishu">Vishu</a>
+    <a href="#wishes">Wishes</a>
+    <a href="#contact">Contact</a>
+  </div>
+  
+  <div class="content">
+    <!-- ... (previously existing content) ... -->
+    <img src="prof.png" alt="Kavya's Profile Picture" class="profile-pic">
+    <h2>Welcome to Kavya's Birthday Celebration!</h2>
+    <p>Dear Kavya,</p>
+    <p>On this special day, we have come together to celebrate you and the beautiful person you are. This website is dedicated to honoring your life, your dreams, and the joy you bring to everyone around you.</p>
+    <p>Explore the different sections to learn more about your favorite actor, Akshay Kumar, your love for rice, your aspirations, your family, your beloved tortoise, Vishu, and more. We've also gathered cherished memories and heartfelt wishes from your friends and family to make this day even more special.</p>
+    <p>Thank you for being a wonderful person and for the love and support you've shown. We hope this birthday celebration brings a smile to your face and fills your heart with happiness.</p>
+    <p>Wishing you a very happy birthday!</p>
+    <p>With love,</p>
+    <p>Your friends and family</p>
+
+  </div>
+  
+  <!-- Slideshow of memorable moments -->
+  <div class="slideshow-container">
+    <!-- ... (previously existing slides) ... -->
+    <div class="mySlides">
+        <img src="herpic.jpeg" alt="Memorable Moment 1">
+      </div>
+      <div class="mySlides">
+        <img src="herpic2.jpeg" alt="Memorable Moment 2">
+      </div>
+      <div class="mySlides">
+          <img src="herpic3.jpeg" alt="Memorable Moment 2">
+        </div>
+        <div class="mySlides">
+          <img src="herpic4.jpeg" alt="Memorable Moment 2">
+        </div>
+      <!-- Add more slides as needed -->
+      
+      <!-- Previous and Next buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+
+  <!-- Guestbook for wishes -->
+  <div class="guestbook">
+    <!-- ... (previously existing guestbook form) ... -->
+    
+
+  </div>
+  
+  <!-- About Section -->
+  <div class="about-section">
+    <h2>About Kavya</h2>
+    <img src="kavya_about_image.jpg" alt="Kavya's Picture">
+    <p>Hello everyone!</p>
+    <p>I'm Kavya, and I'm excited to be celebrating my birthday with all of you. I'm a passionate engineering student, and my dream is to become an IAS officer one day. My journey has had its ups and downs, but it's the support of my loving family, friends, and all of you that keeps me going.</p>
+    <p>Aside from my academic pursuits, I'm a big fan of Indian actor Akshay Kumar, and I absolutely love rice! However, you won't find any peas in my plate, as they are my least favorite food. On a lighter note, I adore my pet tortoise, Vishu, who brings a smile to my face every day.</p>
+    <p>Thank you for being a part of my life and for sharing in this special day with me. Your presence and warm wishes mean the world to me. Let's make this birthday unforgettable together!</p>
+    <p>With love,</p>
+    <p>Kavya</p>
+  </div>
+  
+  <!-- Other sections and content go here -->
+  
+  <div class="nav">
+    <!-- ... (navigation links) ... -->
+  </div>
+
+  <script>
+    /* ... (previously existing JavaScript for slideshow) ... */
+  </script>
+</body>
+</html>
